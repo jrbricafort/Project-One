@@ -1,0 +1,16 @@
+.row{
+    margin: 10px;
+    border: 10px;
+}
+
+.page-footer{
+    border: 5px;
+}
+
+.jumbotron{
+    background-color: black;
+}
+
+h1 {
+    color: antiquewhite;
+}
