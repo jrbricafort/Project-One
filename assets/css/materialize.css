@@ -9,8 +9,42 @@
 
 .jumbotron{
     background-color: black;
+    height: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #dddd;
+
 }
 
 h1 {
     color: antiquewhite;
+    text-align: center;
+    margin-top: -45px;
+    
 }
+
+.list-group-item{
+font-size: 20px;
+background-color: black;
+color: #dddd;
+border-color: #dddd;
+}
+
+p{
+    font-size: 15px;
+}
+
+.row{
+    padding-top: 10px;
+}
+
+.card{
+    border-color: black;
+    border-width: 2px;
+    height: 150px;
+}
+
+.nav-item{
+    color: #dddd;
+}
+

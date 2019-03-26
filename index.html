@@ -12,21 +12,20 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/materialize.css">
   <script src="projectOne.js"></script>
   <div class="jumbotron">
+   
+    <h1 class="display-4">Our Financial App</h1>
     <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <h1 class="display-4">The Latest in Financial Stats</h1>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+       
+      </ul>
     <p class="lead"></p>
 
   </div>
@@ -34,6 +33,12 @@
 
 <body>
   <div class="container">
+      <form>
+          <input type="text" id="user-input" placeholder="Search">
+          <br>
+          <input type="submit" id="search" value="Search">
+      </form>
+          
     <!-- Content here -->
 
     <div class="row">
@@ -45,10 +50,19 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-8">
-        <p>Dow</p>
-        <p>Nasdaq</p>
-        <p>S&P</p>
+      <div class="col-sm-7">
+          <ul class="list-group">
+              <li class="list-group-item"><strong>Dow Jones</strong>
+                <p>Dow Jones Industrial Average</p>
+              </li>
+              <li class="list-group-item"><strong>NASDAQ</strong>
+                <p>NASDAQ Composite</p>
+              </li>
+              <li class="list-group-item"><strong>S&P 500</strong>
+                <p>S&P 500</p>
+              </li>
+             
+            </ul>
       </div>
     </div>
     
@@ -108,27 +122,12 @@
 </head>
 
 <body>
-    testesttest
+    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <!-- Input element -->
   
   <!-- Input element -->
-    <form>
-        <input type="text" id="user-input" placeholder="Search">
-        <br>
-        <input type="submit" id="search" value="Search">
-    </form>
-        
+  
 
 
 
