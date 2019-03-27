@@ -9,10 +9,10 @@
 
 .jumbotron{
     background-color: black;
-    height: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: #dddd;
+
 
 }
 
@@ -46,5 +46,12 @@ p{
 
 .nav-item{
     color: #dddd;
+}
+
+body{
+}
+
+.content{
+
 }
 
