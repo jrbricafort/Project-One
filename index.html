@@ -1,32 +1,81 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Financial App</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/materialize.css">
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Financial App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/materialize.css">
+</head>
 
-    <body>
-        <div class="jumbotron">
+<body>
+    <div class="jumbotron">
 
-            <h1 class="display-4">Our Financial App</h1>
-            <ul class="nav justify-content-end">
+        <h1 class="display-4">Our Financial App</h1>
+
+        <ul class="nav justify-content-end">
+            <a href="contact.html">
+                <li>Contact Us</li>
+            </a>
+        </ul>
+        <p class="lead"></p>
+
+    </div>
+
+    <div class="container">
+        <!-- <form>
+            <input type="text" id="user-input" placeholder="Search">
+            <br>
+            <input type="submit" id="search" value="Search">
+        </form> -->
+
+        <!-- Content here -->
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 12rem;">
+                    <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                    <div class="card-body">
+                        <p class="card-text">Income Stats</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <ul class="list-group">
 
 
-                    <!----->
-                    <a href="contact.html">
-						<li>Contact Us</li>
-                            </a>
+                    <form id="userInputOne">
+                        <input type="text" id="searchOne" placeholder="Search">
+                        <input type="submit" id="search-One" value="Search">
+                    </form>
+                    <li class="list-group-item" id="stockSearchOne"><strong>Dow Jones</strong>
+                        <p>Dow Jones Industrial Average</p>
+                    </li>
 
-            </ul>
-            <p class="lead"></p>
 
+                    <form id="userInputTwo">
+                        <input type="text" id="searchTwo" placeholder="Search">
+                        <input type="submit" id="search-Two" value="Search">
+                    </form>
+                    <li class="list-group-item" id="stockSearchTwo"><strong>NASDAQ</strong>
+                        <p>NASDAQ Composite</p>
+                    </li>
+
+
+                    <form id="userInputThree">
+                        <input type="text" id="searchThree" placeholder="Search">
+                        <input type="submit" id="search-Three" value="Search">
+                    </form>
+                    <li class="list-group-item" id="stockSearchThree"><strong>S&P 500</strong>
+                        <p>S&P 500</p>
+                    </li>
+
+                </ul>
+            </div>
         </div>
 
         <div class="container">
@@ -121,21 +170,18 @@
 
             </footer>
             <!-- Footer -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                 crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
                 crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossorigin="anonymous"></script>
 
             <!-- Scripts start here -->
-            <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
             <script src="./assets/js/projectOne.js"></script>
 
-    </body>
+</body>
 
 </html>
