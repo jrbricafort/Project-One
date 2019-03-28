@@ -7,19 +7,10 @@
     border: 5px;
 }
 
-.jumbotron{
-    background-color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #dddd;
-
-
-}
 
 h1 {
     color: antiquewhite;
     text-align: center;
-    margin-top: -45px;
     
 }
 
@@ -39,9 +30,9 @@ p{
 }
 
 .card{
-    border-color: black;
     border-width: 2px;
     height: 150px;
+    border-color: white;
 }
 
 .nav-item{
@@ -50,5 +41,10 @@ p{
 
 .content{
     
+}
+
+.page-header{
+    height: 70px;
+    background-color: rgba(66, 65, 65, 0.867);
 }
 
