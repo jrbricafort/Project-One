@@ -8,6 +8,7 @@
 }
 
 body{
+    background-image: url("../images/road_street_old_city_light_shadow_blackandwhite_white-399815.jpg");
 }
 
 h1 {
@@ -55,4 +56,51 @@ p{
     background-color: rgba(66, 65, 65, 0.867);
     font-family: 'Merriweather', serif;
 }
+/* SCROLL DOWN */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stockDiv{
+    background: turquoise; 
+    border: solid 1px;
+    /* sorry */
+}
