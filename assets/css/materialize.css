@@ -5,11 +5,18 @@
 
 .page-footer{
     border: 5px;
+    margin-bottom: 10px;
 }
 
 body{
     background-image: url("../images/road_street_old_city_light_shadow_blackandwhite_white-399815.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 70px;
+   
 }
+
+
 
 h1 {
     color: antiquewhite;
@@ -43,13 +50,15 @@ p{
     border-color: white;
 }
 
-.nav-item{
-    color: #dddd;
+.nav a{
+    color: antiquewhite;
+    font-family: 'Merriweather', serif;
+    margin-right: 10px;
+    margin-bottom: 100px;
+
 }
 
-.content{
-    
-}
+
 
 .page-header{
     height: 70px;
@@ -58,45 +67,10 @@ p{
 }
 /* SCROLL DOWN */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#userInputOne {
+    margin-top: 30px;
+    margin-left: 60%;
+}
 
 
 .stockDiv{
