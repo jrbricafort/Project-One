@@ -13,7 +13,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 70px;
-   
+    /* Added this just so we can see the text coming up onscreen */
+   color: white;
 }
 
 
