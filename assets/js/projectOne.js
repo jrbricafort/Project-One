@@ -187,7 +187,7 @@ $('#search-One').on('click', function () {
 
 
 });
-database.ref('/searches').limitToFirst(5).once("value", function (snapshot) {
+database.ref('/searches').limitToLast(5).once("value", function (snapshot) {
   snapshot.forEach((child) => {
     console.log(child.val().fbSearchValue)
     var newSearchButton = $('<button>');
