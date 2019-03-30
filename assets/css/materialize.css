@@ -44,6 +44,11 @@ a:hover {
     min-height: 600px;
 }
 
+.contactContainer {
+    background-color: rgba(0, 0, 0, .6);
+    min-height: 600px;
+}
+
 .stock-title-div {
     text-align: center;
 }
