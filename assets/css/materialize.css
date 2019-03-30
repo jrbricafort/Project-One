@@ -138,10 +138,10 @@ p{
 .contactSubmit{
     display: block;
     margin: 20px 0 0 0;
-    background-color:#dddd;
+    background-color:red;
     border:none;
     color: white;
-    padding: 10px 30px;
+    padding: 5px 10px;
 }
 .mainContact form{
     margin: 30px 0 0 40px;
