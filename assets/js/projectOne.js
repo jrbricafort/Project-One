@@ -1,3 +1,16 @@
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyCrNQlrf_PNZUzB0q_LAs4XsRXIF8KMRTY",
+  authDomain: "project-1-4069a.firebaseapp.com",
+  databaseURL: "https://project-1-4069a.firebaseio.com",
+  projectId: "project-1-4069a",
+  storageBucket: "project-1-4069a.appspot.com",
+  messagingSenderId: "121909185590"
+};
+
+firebase.initializeApp(config);
+
+var database = firebase.database();
 
 // Symbol = the company/stock we're tracking
 
@@ -147,4 +160,23 @@ $('#search-One').on('click', function () {
     $('#searchOne').val('');
   }
 
+  var newSearch = {
+    fbSearchValue: userInputOne,
+  };
+
+  database.ref().push(newSearch);
+
+
 });
+database.ref().limitToFirst(5).once("value", function (snapshot) {
+  snapshot.forEach((child) => {
+    console.log(child.val().fbSearchValue)
+    
+  });
+  // for(searchTerm in snapshot.val()) {
+  //   console.log(searchTerm)
+  // }
+  // console.log(snapshot.val())
+  // console.log(snapshot.val()[0])
+
+})
