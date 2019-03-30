@@ -166,11 +166,17 @@ $('#search-One').on('click', function () {
 
   database.ref().push(newSearch);
 
-  
+
 });
-    database.ref().on("value", function (snapshot) {
-  
-      console.log(snapshot.val())
-      console.log(snapshot.val()[0].val().fbSearchValue)
-  
-    })
+database.ref().limitToFirst(5).once("value", function (snapshot) {
+  snapshot.forEach((child) => {
+    console.log(child.val().fbSearchValue)
+    
+  });
+  // for(searchTerm in snapshot.val()) {
+  //   console.log(searchTerm)
+  // }
+  // console.log(snapshot.val())
+  // console.log(snapshot.val()[0])
+
+})
