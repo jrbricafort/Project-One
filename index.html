@@ -28,15 +28,32 @@
 
 
     <div class="container">
-        <form id="userInputOne">
-            <input type="text" id="searchOne" placeholder="Search">
-            <input type="submit" id="search-One" value="Search">
-        </form>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Welcome</h3>
+                <p>To get started, please enter the NYSE stock symbol of the company you're looking for.</p>
+
+                <a href="https://en.wikipedia.org/wiki/Companies_listed_on_the_New_York_Stock_Exchange_(A)"
+                    target="_blank">
+                    <div id="stock-ref-button">
+                        <p>Not sure of the stock symbol?<br> Click here for a reference list.</p>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-md-6">
+                <form id="userInputOne">
+                    <input type="text" id="searchOne" placeholder="Search">
+                    <input type="submit" id="search-One" value="Search">
+                </form>
+            </div>
+        </div>
+
         <div class="stock-container">
 
             <div class="row">
-                <div class="col-6" id="chart-div"></div>
-                <div class="col-6" id="news-div"></div>
+                <div class="col-md-6" id="chart-div"></div>
+                <div class="col-md-6" id="news-div"></div>
             </div>
 
         </div>
@@ -51,7 +68,7 @@
     <footer class="page-footer font-small blue">
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <div class="footer-copyright text-center py-3">© 2019 Copyright
 
         </div>
         <!-- Copyright -->

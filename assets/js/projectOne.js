@@ -7,6 +7,9 @@
 $('#search-One').on('click', function () {
   // Prevent refresh on submit
   event.preventDefault();
+  $('#chart-div').empty();
+  $('#news-div').empty();
+
   // Capture user input and store to variable.
   var userInputOne = $('#searchOne').val().trim();
   console.log(userInputOne);
@@ -19,25 +22,25 @@ $('#search-One').on('click', function () {
 
     var convertedUserInput = userInputOne.toUpperCase()
     console.log(convertedUserInput);
-    
-    
-    
+
+
+
     // Create new canvas element and append to chart-div
     var newCanvas = $('<canvas>');
     newCanvas.attr('id', 'myChart').attr('style', 'max-width: 600px; max-height: 300px;')
     $('#chart-div').append(newCanvas);
-    
-    
+
+
     // Construct query URL using user input variable (This is a string literal)
     var queryURL = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${userInputOne}&interval=5min&apikey=2DVT0SBK107XQS8F`
-    
+
     // Make Stock API call...
     $.ajax({
       url: queryURL,
       method: "GET"
     }).then(function (responseStock) {
       console.log(responseStock);
-      
+
       // Create new stock header div 
       // IF WE'RE ONLY GOING TO SHOW 1 CHART AT A TIME, CREATE THIS EMPTY DIV IN HTML
       var stockHeaderDiv = $('<div>');
@@ -113,33 +116,34 @@ $('#search-One').on('click', function () {
         console.log(responseNYT);
         console.log(responseNYT.response.docs[0].web_url);
 
-        // Create headlineDiv, which will hold the headline
-        var headlineDiv = $('<div>').attr('class', 'headline-div');
-        // Create new <a> element. Give it an href to the full article on NYT website.
-        var articleLink = $('<a>').attr('href', responseNYT.response.docs[0].web_url);
-        // Set article link to open in a new tab
-        articleLink.attr('target', '_blank');
-        // Add the headline text to the article link
-        articleLink.html("<h3>" + responseNYT.response.docs[0].headline.main + "</h3>")
-        // Append the article link to the headline div
-        $(headlineDiv).append(articleLink);
-        // Append the headline div to the news div
-        $('#news-div').append(headlineDiv);
-        console.log(responseNYT.response.docs[0].snippet);
-        // Create div to hold the article snippet
-        var snippetDiv = $('<div>').attr('class', 'snippet-div');
-        // Add snippet text to a new <p> element inside snippet div.
-        snippetDiv.html('<p>' + responseNYT.response.docs[0].snippet + '</p>');
-        // Append snippetDiv to the news div
-        $('#news-div').append(snippetDiv);
-
+        for (i = 0; i < 3; i++) {
+          // Create headlineDiv, which will hold the headline
+          var headlineDiv = $('<div>').attr('class', 'headline-div');
+          // Create new <a> element. Give it an href to the full article on NYT website.
+          var articleLink = $('<a>').attr('href', responseNYT.response.docs[i].web_url);
+          // Set article link to open in a new tab
+          articleLink.attr('target', '_blank');
+          // Add the headline text to the article link
+          articleLink.html("<h3>" + responseNYT.response.docs[i].headline.main + "</h3>")
+          // Append the article link to the headline div
+          $(headlineDiv).append(articleLink);
+          // Append the headline div to the news div
+          $('#news-div').append(headlineDiv);
+          console.log(responseNYT.response.docs[i].snippet);
+          // Create div to hold the article snippet
+          var snippetDiv = $('<div>').attr('class', 'snippet-div');
+          // Add snippet text to a new <p> element inside snippet div.
+          snippetDiv.html('<p>' + responseNYT.response.docs[i].snippet + '</p>');
+          // Append snippetDiv to the news div
+          $('#news-div').append(snippetDiv);
+        }
 
 
       });
     });
 
     // Empty search box text on search
-    $('#searchOne').val('')
+    $('#searchOne').val('');
   }
 
 });
