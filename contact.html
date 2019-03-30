@@ -1,61 +1,36 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Contact Us</title>
-	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-</head>
-
-<body>
-	<div class="header">
-		<header class="logo">Financial App</header>
-		<nav>
-			<ul>
-				<a href="index.html">
-					<li id="last">About</li>
-				</a>
-				<a href="portfolio.html">
-					<li>Portfolio</li>
-				</a>
-				<a href="contact.html">
-					<li>Contact</li>
-				</a>
-			</ul>
-		</nav>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	</head>
 	</div>
+	<form>
+		<h4>Name</h4>
+		<input class="contactName" type="text" placeholder="Your Name">
 
-	<div class="containerContact">
-		<div class="mainSec">
-			<section class="mainContact">
-				<h1>Contact</h1>
-				<form>
-					<h4>Name</h4>
-					<input class="contactName" type="text" placeholder="Your Name">
+		<h4>Email</h4>
+		<input class="contactEmail" type="text" placeholder="example@gmail.com">
 
-					<h4>Email</h4>
-					<input class="contactEmail" type="text" placeholder="example@gmail.com">
+		<h4>Message</h4>
+		<input class="contactMessage" type="text">
 
-					<h4>Message</h4>
-					<input class="contactMessage" type="text">
+		<input class="contactMessage" type="submit">
 
-					<input class="contactSubmit" type=submit>
-				</form>
-			</section>
-		</div>
-		<div class="sideSec">
-			<aside class="side">
-
-				</nav>
-			</aside>
-		</div>
-	</div>
+	</form>
 
 	<div class="bottom">
 		<footer class="footer">
 			<h6>©2019 Copy Right</h6>
 		</footer>
 	</div>
-</body>
+
+	<!-- Scripts start here -->
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="./assets/js/projectOne.js"></script>
+	</body>
 
 </html>

@@ -43,11 +43,12 @@ $('#search-One').on('click', function () {
 
       // Create new stock header div 
       // IF WE'RE ONLY GOING TO SHOW 1 CHART AT A TIME, CREATE THIS EMPTY DIV IN HTML
-      var stockHeaderDiv = $('<div>');
-      stockHeaderDiv.attr('class', 'col-12');
-      stockHeaderDiv.attr('class', 'stock-title-div');
-      stockHeaderDiv.text(convertedUserInput + " Stock Values and Related News");
-      $('.stock-container').prepend(stockHeaderDiv);
+      // var stockHeaderDiv = $('<div>');
+      // stockHeaderDiv.attr('class', 'col-12');
+      // stockHeaderDiv.attr('class', 'stock-title-div');
+      // stockHeaderDiv.text(convertedUserInput + " Stock Values and Related News");
+      // $('.stock-container').prepend(stockHeaderDiv);
+      $('.stock-title-div').html("<h3>" + convertedUserInput + " Stock Value and Related News</h3>")
 
       // data array is built using values returned from stock API. It is passed into chart.js
       var dataArr = [];
