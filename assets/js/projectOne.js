@@ -8,7 +8,7 @@ var config = {
   messagingSenderId: "121909185590"
 };
 
-firebase.initializeApp(config);
+firebase.initializeApp(config); 
 
 var database = firebase.database();
 
@@ -168,15 +168,34 @@ $('#search-One').on('click', function () {
 
 
 });
-database.ref().limitToFirst(5).once("value", function (snapshot) {
-  snapshot.forEach((child) => {
-    console.log(child.val().fbSearchValue)
+// database.ref().limitToFirst(5).once("value", function (snapshot) {
+//   snapshot.forEach((child) => {
+//     console.log(child.val().fbSearchValue)
     
-  });
-  // for(searchTerm in snapshot.val()) {
-  //   console.log(searchTerm)
-  // }
-  // console.log(snapshot.val())
-  // console.log(snapshot.val()[0])
+//   });
+//   // for(searchTerm in snapshot.val()) {
+//   //   console.log(searchTerm)
+//   // }
+//   // console.log(snapshot.val())
+//   // console.log(snapshot.val()[0])
 
-})
+// })
+$(".contactSubmit").on('click', function(even){
+  event.preventDefault()
+  var contactName = $(".contactName").val();
+
+   var contactEmail = $(".contactEmail").val();
+
+   var contactMessage = $(".contactMessage").val();
+
+   database.ref("/contact").push({
+     
+    contactName: contactName,
+    contactEmail: contactEmail,
+    contactMessage:contactMessage
+
+   })
+   
+});
+ 
+
