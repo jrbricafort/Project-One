@@ -70,7 +70,9 @@ h1 {
 
 p {
     font-size: 15px;
+    font-family: 'Merriweather', serif;
 }
+
 
 .row {
     padding-top: 10px;
@@ -90,13 +92,19 @@ p {
 
 }
 
+
+
+
 .page-header {
     height: 70px;
-    background-color: rgba(66, 65, 65, 0.867);
+    background-color: #666666;
     font-family: 'Merriweather', serif;
 }
 
 /*--------------Contact---------------*/
+
+
+
 .mainContact h1{
     margin-left: 40px;
     margin-top: 10px;
@@ -142,6 +150,11 @@ p {
 }
 .mainContact form{
     margin: 30px 0 0 40px;
+}
+
+#contactForm{
+    margin-left: 20px;
+    padding: 20px;
 }
 
  /*---------------Footer---------------*/
