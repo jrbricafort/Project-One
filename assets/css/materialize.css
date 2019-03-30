@@ -1,14 +1,14 @@
-.row{
+.row {
     margin: 10px;
     border: 10px;
 }
 
-.page-footer{
+.page-footer {
     border: 5px;
     margin-bottom: 10px;
 }
 
-body{
+body {
     background-image: url("../images/road_street_old_city_light_shadow_blackandwhite_white-399815.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,28 +61,30 @@ h1 {
     padding: 15px;
 }
 
-.list-group-item{
-font-size: 20px;
-background-color: black;
-color: #dddd;
-border-color: #dddd;
+.list-group-item {
+    font-size: 20px;
+    background-color: black;
+    color: #dddd;
+    border-color: #dddd;
 }
 
-p{
+p {
     font-size: 15px;
+    font-family: 'Merriweather', serif;
 }
 
-.row{
+
+.row {
     padding-top: 10px;
 }
 
-.card{
+.card {
     border-width: 2px;
     height: 150px;
     border-color: white;
 }
 
-.nav a{
+.nav a {
     color: antiquewhite;
     font-family: 'Merriweather', serif;
     margin-right: 10px;
@@ -92,14 +94,17 @@ p{
 
 
 
-.page-header{
+
+.page-header {
     height: 70px;
-    background-color: rgba(66, 65, 65, 0.867);
+    background-color: #666666;
     font-family: 'Merriweather', serif;
 }
-/* SCROLL DOWN */
 
 /*--------------Contact---------------*/
+
+
+
 .mainContact h1{
     margin-left: 40px;
     margin-top: 10px;
@@ -145,6 +150,11 @@ p{
 }
 .mainContact form{
     margin: 30px 0 0 40px;
+}
+
+#contactForm{
+    margin-left: 20px;
+    padding: 20px;
 }
 
  /*---------------Footer---------------*/
@@ -204,7 +214,7 @@ p{
 
 
 
-
+/* SCROLL DOWN */
 
 #userInputOne {
     margin-top: 30px;
@@ -212,8 +222,8 @@ p{
 }
 
 
-.stockDiv{
-    background: turquoise; 
+.stockDiv {
+    background: turquoise;
     border: solid 1px;
     /* sorry */
 }
