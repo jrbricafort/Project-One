@@ -3,10 +3,7 @@
     border: 10px;
 }
 
-.page-footer {
-    border: 5px;
-    margin-bottom: 10px;
-}
+
 
 body {
     background-image: url("../images/road_street_old_city_light_shadow_blackandwhite_white-399815.jpg");
@@ -31,7 +28,9 @@ body {
     /* font-weight: bolder; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .6); 
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .6),
-    0px 0px 10px #fff; 
+    0px 0px 10px;
+    color: antiquewhite;
+
 }
 
 /* Added to avoid gross blue underline on hover */
@@ -48,6 +47,7 @@ a:hover {
 
 
 
+
 .stock-title-div {
     text-align: center;
 }
@@ -58,6 +58,7 @@ h1 {
     text-align: left;
     margin-top: -45px;
 }
+
 
 .display-4 {
     font-size: 30px;
@@ -75,6 +76,13 @@ h1 {
 p {
     font-size: 15px;
     font-family: 'Merriweather', serif;
+    color: antiquewhite;
+
+}
+
+h3{
+    color: antiquewhite;
+
 }
 
 
@@ -91,9 +99,9 @@ p {
 .nav a {
     color: antiquewhite;
     font-family: 'Merriweather', serif;
-    margin-right: 10px;
+    margin-right: 30px;
     margin-top: 23px;
-
+ 
 }
 
 
@@ -103,7 +111,12 @@ p {
     height: 70px;
     background-color: #666666;
     font-family: 'Merriweather', serif;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
+
+
 
 /*--------------Contact---------------*/
 
@@ -165,7 +178,22 @@ p {
     padding: 20px;
 }
 
+h4{
+    color: antiquewhite;
+    padding-top: 10px;
+}
 
+.contactName{
+    background-color: antiquewhite;
+}
+
+.contactEmail{
+    background-color: antiquewhite;
+}
+.contactMessage{
+    background-color: antiquewhite;
+
+}
 
 
 
@@ -207,7 +235,14 @@ p {
 #userInputOne {
     margin-top: 30px;
     margin-left: 45%;
+
 }
+
+#searchOne{
+    background-color: antiquewhite;
+}
+
+
 
 .stockDiv {
     background: turquoise;
