@@ -3,18 +3,17 @@
     border: 10px;
 }
 
-
-
 body {
     background-image: url("../images/road_street_old_city_light_shadow_blackandwhite_white-399815.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px 70px;
     /* Added this just so we can see the text coming up onscreen */
-   color: white;
+    color: white;
 }
 
 /* Styling for reference list button. */
+
 #stock-ref-button {
     width: 300px;
     padding: 10px 15px 5px;
@@ -26,14 +25,13 @@ body {
 
 #stock-ref-button:hover {
     /* font-weight: bolder; */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .6); 
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6),
-    0px 0px 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .6), 0px 0px 10px;
     color: antiquewhite;
-
 }
 
 /* Added to avoid gross blue underline on hover */
+
 a:hover {
     text-decoration: none;
 }
@@ -45,20 +43,15 @@ a:hover {
     margin-right: auto;
 }
 
-
-
-
 .stock-title-div {
     text-align: center;
 }
-
 
 h1 {
     color: antiquewhite;
     text-align: left;
     margin-top: -45px;
 }
-
 
 .display-4 {
     font-size: 30px;
@@ -77,14 +70,11 @@ p {
     font-size: 15px;
     font-family: 'Merriweather', serif;
     color: antiquewhite;
-
 }
 
-h3{
+h3 {
     color: antiquewhite;
-
 }
-
 
 .row {
     padding-top: 10px;
@@ -101,11 +91,7 @@ h3{
     font-family: 'Merriweather', serif;
     margin-right: 30px;
     margin-top: 23px;
- 
 }
-
-
-
 
 .page-header {
     height: 70px;
@@ -116,8 +102,6 @@ h3{
     z-index: 2;
 }
 
-
-
 /*--------------Contact---------------*/
 
 .contactContainer {
@@ -125,11 +109,12 @@ h3{
     min-height: 600px;
 }
 
-.mainContact h1{
+.mainContact h1 {
     margin-left: 40px;
     margin-top: 10px;
 }
-.mainContact h1{
+
+.mainContact h1 {
     width: 75%;
     padding-bottom: 30px;
     color: #ffffff;
@@ -141,111 +126,92 @@ h3{
     border-radius: 2px;
     border-bottom: 3px solid #cccccc;
 }
-.mainContact h4{
+
+.mainContact h4 {
     margin: 10px 0 0 0;
     padding: 0;
 }
-.contactName{
-    width: 500px;
-    height: 25px;
-    margin: 5px 0 0 0;
+
+@media only screen {
+    .contactName {
+        width: 100%;
+        height: 25px;
+    }
+    .contactEmail {
+        width: 100%;
+        height: 25px;
+    }
+    .contactMessage {
+        width: 100%;
+        height: 150px;
+    }
 }
-.contactEmail{
-    width: 500px;
+
+.contactName {
+    max-width: 500px;
     height: 25px;
-    margin: 5px 0 0 0;
+    margin-top: 5px;
 }
-.contactMessage{
-    width: 500px;
+
+.contactEmail {
+    max-width: 500px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.contactMessage {
+    max-width: 500px;
     height: 150px;
-    margin: 5px 0 0 0;
+    margin-top: 5px;
 }
-.contactSubmit{
+
+.contactSubmit {
     display: block;
-    margin: 20px 0 0 0;
-    background-color:#dddd;
-    border:none;
+    margin-top: 20px;
+    background-color: #dddd;
+    border: none;
     color: white;
     padding: 10px 30px;
     height: 50px;
+    border-radius: 15px;
 }
-.mainContact form{
+
+.mainContact form {
     margin: 30px 0 0 40px;
 }
 
-#contactForm{
+#contactForm {
     margin-left: 20px;
     padding: 20px;
 }
 
-h4{
+h4 {
     color: antiquewhite;
     padding-top: 10px;
 }
 
-.contactName{
+.contactName {
     background-color: antiquewhite;
 }
 
-.contactEmail{
+.contactEmail {
     background-color: antiquewhite;
 }
-.contactMessage{
+
+.contactMessage {
     background-color: antiquewhite;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SCROLL DOWN */
 
 #userInputOne {
     margin-top: 30px;
     margin-left: 45%;
-
 }
 
-#searchOne{
+#searchOne {
     background-color: antiquewhite;
 }
-
-
 
 .stockDiv {
     background: turquoise;
     border: solid 1px;
-    /* sorry */
 }
