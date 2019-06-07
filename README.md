@@ -4,4 +4,4 @@ This is a front-end financial application that takes the user's search query and
 
 The technology utlitized consists of HTML, CSS, Bootstrap, JS, Chart.js.
 
-https://jrbricafort.github.io/Project-One/
+https://jrbricafort.github.io/The-Midas-Project/
